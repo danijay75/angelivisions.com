@@ -1,3 +1,4 @@
+import Link from "next/link"
 "use client"
 
 import type React from "react"
@@ -75,7 +76,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-slate-900/80 backdrop-blur-md border-t border-slate-700/50">
+    <footer className="relative z-10 pointer-events-auto bg-slate-900/80 backdrop-blur-md border-t border-slate-700/50">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand & Company Info */}
@@ -239,11 +240,13 @@ export default function Footer() {
           </div>
         </motion.div>
       </div>
-    <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
-          <a href="/mentions-legales" className="hover:text-white">Mentions légales</a>
-          <a href="/politique-de-confidentialite" className="hover:text-white">Politique de confidentialité</a>
-          <a href="/politique-cookies" className="hover:text-white">Politique cookies</a>
-</nav>
+    
+        <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
+          <Link href="/mentions-legales" className="hover:text-white">Mentions légales</Link>
+          <Link href="/politique-de-confidentialite" className="hover:text-white">Politique de confidentialité</Link>
+          <Link href="/politique-cookies" className="hover:text-white">Politique cookies</Link>
+        </nav>
+        
 </footer>
   )
 }
