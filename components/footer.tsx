@@ -240,12 +240,6 @@ export default function Footer() {
           </div>
         </motion.div>
       </div>
-    
-        <nav className="flex flex-wrap items-center gap-x-6 gap-y-2">
-          <Link href="/mentions-legales" className="hover:text-white">Mentions légales</Link>
-          <Link href="/politique-de-confidentialite" className="hover:text-white">Politique de confidentialité</Link>
-          <Link href="/politique-cookies" className="hover:text-white">Politique cookies</Link>
-        </nav>
         
 </footer>
   )
